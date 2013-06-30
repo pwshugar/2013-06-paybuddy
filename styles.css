@@ -6,3 +6,18 @@ body {
 #submit {
   font-size: 25px;
 }
+
+
+
+#questions {
+  width: 400px;
+  float:left;
+}
+
+#answers {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  height: 55%;
+  width: 25%;
+}

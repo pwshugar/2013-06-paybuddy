@@ -1,11 +1,25 @@
 $(function(){
 
-  var formHandler = function(event){
-    console['log']("submitted"); // fixme: validate form here
+  var formInfo = {}
 
-    event['preventDefault'](); // prevents the page from reloading
+  var formHandler = function(event){
+    console['log']("submitted");
+
+    for (var i = 0; i < $("input").length; i++){
+    	formInfo[$("input")[i].id] = $("input")[i].value;
+    }
+
+	for (k in formInfo){
+		$("." + k).text(formInfo[k]);
+		$("#" + k)[0].value = "";
+	}
+
+	$("#submit")[0].value = "Submit";
+
+
+    event['preventDefault']();
   };
 
-  $("form")['submit'](formHandler); // register a callback
+  $("form")['submit'](formHandler);
 
 });
