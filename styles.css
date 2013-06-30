@@ -1,3 +1,8 @@
 body {
-  /* rules go here */
+  font-size: 19px;
+  background-color: lightblue;
+}
+
+#submit {
+  font-size: 25px;
 }
