@@ -1,8 +1,7 @@
 $(function(){
-
   var formInfo = {};
+  
   var formHandler = function(event){
-  	console.log($(".rd"));
   	$("#rd").text("");
     for (var i = 0; i < $(".rd").length; i++){
     	if ($(".rd")[i].checked){
