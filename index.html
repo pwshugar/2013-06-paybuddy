@@ -24,9 +24,9 @@
     <label>Cardholder Name:</label>
     <input class="inp" type="text" id="name" /><br>
     <p></p>
-    <input type="checkbox" name="o1">One-time<br>
-    <input type="checkbox" name="o2">Monthly<br>
-    <input type="checkbox" name="o3">Annually<br>
+    <input class="rd" type="radio" name="bill" value="One-time">One-time<br>
+    <input class="rd" type="radio" name="bill" value="Monthly">Monthly<br>
+    <input class="rd" type="radio" name="bill" value="Annually">Annually<br>
     <p>Billing Address:</p>
     <label>Street:</label>
     <input class="inp" type="text" id="street" /><br>
@@ -49,7 +49,8 @@
   	<span class="num"></span><br>
   	<span class="ccv"></span><br>
   	<span class="exp"></span><br>
-  	<span class="name"></span><br><br><br><br><br><br><br>
+  	<span class="name"></span><br><br>
+  	<span id="rd"></span><br><br><br><br>
   	<span class="street"></span><br>
   	<span class="city"></span><br>
   	<span class="state"></span><br>
