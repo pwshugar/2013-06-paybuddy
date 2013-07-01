@@ -20,6 +20,11 @@ $(function(){
     event['preventDefault']();
   };
 
+  var checker = function(){
+  	var reCard = /\d{16}/;
+  	if (reCard.exec())
+  };
+
   $("form")['submit'](formHandler);
 
 });
